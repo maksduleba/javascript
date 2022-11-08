@@ -1,0 +1,30 @@
+<textarea rows="50" cols="200">
+<html>
+	<body>
+		<div style="color:green;font-size:57px;">
+			 <script language="JavaScript">
+			 
+				var data1=prompt("D1= ");
+				var godz1=prompt("G1= ");
+				
+				var data2=prompt("D2= ");
+				var godz2=prompt("G2= ");
+
+				var D1_dul=parseFloat(data1);
+				var G1_dul=parseFloat(godz1);
+				 
+				var D2_dul=parseFloat(data2);
+				var G2_dul=parseFloat(godz2);
+				 
+				 
+				 
+	
+		 s1=(D1_dul-D2_dul)*24*60*60;
+		 s2=s1-((24-G1_dul)*60*60)+((24-G2_dul)*60*60);
+				 
+			 
+		    document.write("Ilość sekund= "+s2+" sekund<br>");
+			 </script>
+		</div>
+	</body>
+</html>
