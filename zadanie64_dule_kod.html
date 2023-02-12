@@ -1,0 +1,39 @@
+<textarea rows="30" cols="110" readonly="readonly" style=" resize: none;">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zadanie 64-duleba</title>
+        <meta  charset="utf-8">
+    </head>
+    <body>
+        <p id="wynik"></p>
+        <button type="submit" value="Oblicz" onclick="SprawdzParzysta()">Oblicz Ponownie</button><br>
+        <script>
+            var dul = document.getElementById("wynik");
+            SprawdzParzysta();
+            function SprawdzParzysta()
+            {
+                x = prompt("Podaj liczbe");
+                if(x%2==0)
+                {
+                    dul.innerHTML="liczba jest parzysta";
+                    dul.style.fontSize = "3em";
+                    dul.style.color = "red";
+                }
+                else if(x%2==1)
+                {
+                    dul.innerHTML="liczba jest nieparzysta";
+                    dul.style.fontSize = "5em";
+                    dul.style.color = "silver";
+                }
+                else
+                {
+                    dul.innerHTML="Zła liczba";
+                    dul.style.fontSize = "3em";
+                    dul.style.color = "black";
+                }
+            }
+        </script>
+    </body>
+</html>
+</textarea>

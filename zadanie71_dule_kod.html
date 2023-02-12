@@ -1,0 +1,36 @@
+<textarea rows="30" cols="110" readonly="readonly" style=" resize: none;">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zadanie 71-duleba</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_dul=7;
+            var b_dul=25;
+            for(let i = 0;i<a_dul;i++)
+            {
+                if(i==0 || i==(a_dul-1))
+                {
+                    for(let j = 0;j<b_dul;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(let j = 2;j<b_dul;j++)
+                    {
+                        document.write("&nbsp&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
+</textarea>
